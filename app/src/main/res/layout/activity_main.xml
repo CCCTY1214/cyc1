@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Arknights Food"
+            android:text="@string/arknights_food"
             android:textSize="30sp"
             android:layout_gravity="center"
             android:textStyle="bold"
