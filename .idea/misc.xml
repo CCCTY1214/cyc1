@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/activity1.xml" value="0.32608695652173914" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/activity_main2.xml" value="0.32608695652173914" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/activity_main3.xml" value="0.2" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/activity_main4.xml" value="0.25" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/fruit_item.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/people_item.xml" value="0.2125" />
+        <entry key="..\:/Users/chent/AndroidStudioProjects/cyc/app/src/main/res/layout/title.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/chent/AppData/Local/Temp/MicrosoftEdgeDownloads/d913a48a-5168-47c8-a06b-7e3e61c4f620/activity_main.xml" value="0.3619791666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
