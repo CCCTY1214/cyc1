@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg">
+    android:background="@drawable/pink">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -99,21 +99,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
-        <CheckBox
-            android:id="@+id/checkBox1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="remember password"
-            android:textColor="#FFFFFF"/>
+
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/login"
         android:layout_width="273dp"
         android:layout_height="50dp"
         android:backgroundTint="#33FFFFFF"
         android:text="log"
+        android:layout_gravity="center">
+
+    </Button>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="273dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#33FFFFFF"
+        android:text="register"
         android:layout_gravity="center">
 
     </Button>

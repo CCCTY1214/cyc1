@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cyc">
         <activity
+            android:name=".activity_add_and_decrease"
+            android:exported="false" />
+        <activity
+            android:name=".cocodayo"
+            android:exported="false" />
+        <activity
+            android:name=".qianfu"
+            android:exported="false" />
+        <activity
+            android:name=".laonvren"
+            android:exported="false" />
+        <activity
+            android:name=".tutu"
+            android:exported="false" />
+        <activity
+            android:name=".denglu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity4"
             android:exported="false" />
         <activity

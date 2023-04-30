@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
-    android:background="@drawable/shark">
+    android:background="@drawable/pink">
 
     <Button
         android:layout_width="match_parent"

@@ -11,70 +11,73 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.cyc.jiavabean.MYsqliteopenhepler;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText edi_name;
     private EditText edi_password;
     private CheckBox checkBox;
-    private Button btn;
+    private Button login;
+    private Button register;
     private int Remember;
     private String password;
+    private Intent intent;
+    private MYsqliteopenhepler mYsqliteopenhepler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bindID();
-
-        SharedPreferences sharedPreferences = getSharedPreferences("mynp.xml", MODE_PRIVATE);
-
-        if (sharedPreferences != null) {
-            String name = sharedPreferences.getString("name", "");
-            password = sharedPreferences.getString("password", "");
-            Remember = sharedPreferences.getInt("check", 0);
-            edi_name.setText(name);
+        mYsqliteopenhepler =new MYsqliteopenhepler(this);
+        find();{
         }
-        if (Remember == 1) {
-            checkBox.setChecked(true);
-            edi_password.setText(password);
-        }
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String name = edi_name.getText().toString();
-                String password = edi_password.getText().toString();
-
-                if("admin".equals(name) && "123456".equals(password)){
-                    SharedPreferences np = getSharedPreferences("mynp.xml", MODE_PRIVATE);
-
-                    SharedPreferences.Editor editor = np.edit();
-                    editor.putString("name", name);
-                    editor.putString("password", password);
-
-                    if (checkBox.isChecked()) {
-                        Remember = 1;
-                        editor.putInt("check", Remember);
-                    } else {
-                        Remember = 0;
-                        editor.putInt("check", Remember);
-                    }
-
-                    editor.commit();
-                    Intent intent = new Intent();
-                    intent.setClass(MainActivity.this,MainActivity2.class);
-                    startActivity(intent);
-                    Toast.makeText(MainActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(MainActivity.this, "用户名或密码错误", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
-    private void bindID() {
+
+
+
+
+
+
+
+
+
+
+    private  void find(){
         edi_name = findViewById(R.id.edit_text1);
         edi_password = findViewById(R.id.edit_text2);
-        checkBox = findViewById(R.id.checkBox1);
-        btn = findViewById(R.id.button1);
+        login = findViewById(R.id.login);
+        register = findViewById(R.id.register);
+
+        login.setOnClickListener(this);
+        register.setOnClickListener(this);
+
+
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        switch (id){
+            case R.id.login:
+                String s = edi_name.getText().toString();
+                String s1= edi_password.getText().toString();
+                boolean login = mYsqliteopenhepler.login(s, s1);
+                if(login){
+                    Toast.makeText(this,"login successful",Toast.LENGTH_SHORT).show();
+                    Intent i =new Intent(this,MainActivity2.class);
+                    startActivity(i);
+                }else {
+                    Toast.makeText(this,"Login failed",Toast.LENGTH_SHORT).show();
+
+                }
+                break;
+            case R.id.register:
+                Intent i1 =new Intent(this,denglu.class);
+                startActivity(i1);
+                break;
+        }
+
     }
 }

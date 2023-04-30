@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/pink">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome to the registration interface！"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name1"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="accout"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:textSize="40sp"
+            android:digits="0123456789"
+            />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/password1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:password="true"/>
+
+
+        <Button
+            android:id="@+id/register1"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:textColor="@color/white"
+            android:layout_below="@id/password_input"
+            android:layout_centerHorizontal="true"
+            android:background="@color/mediumseagreen"
+            android:onClick="zhuche"/>
+    </LinearLayout>
+
+</LinearLayout>

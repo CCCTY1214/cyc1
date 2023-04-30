@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">cyc</string>
     <string name="arknights_food">Arknights Food</string>
+    <string name="tip_account">tip_account Food</string>
+    <string name="tip_password">tip_password</string>
 </resources>
