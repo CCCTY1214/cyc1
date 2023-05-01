@@ -4,41 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="@drawable/pink"
+    tools:context=".menu"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
         android:id="@+id/lv"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_weight="3
-"
         android:orientation="horizontal" />
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:text="restaurant preview"
-        android:backgroundTint="#33FFFFFF"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:textSize="26sp"
-        android:onClick="mumber"></Button>
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#33FFFFFF"
-        android:onClick="pvbutton"
-        android:text="food preview"
-        android:textColor="#000000"
-        android:textSize="26sp"
-        android:textStyle="bold"></Button>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -63,10 +37,6 @@
             android:onClick="abc"
             android:id="@+id/tv2"/>
     </LinearLayout>>
-
-
-
-
 
 
 

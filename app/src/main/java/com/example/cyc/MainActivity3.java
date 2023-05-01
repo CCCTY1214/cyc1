@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.VideoView;
 import android.widget.MediaController;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity3 extends AppCompatActivity{
     MediaPlayer ring;
@@ -57,4 +59,5 @@ public class MainActivity3 extends AppCompatActivity{
             e.printStackTrace();
         }
     }
+
 }

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity3"
-    android:background="@drawable/pink">
+    android:background="@drawable/pink"
+    android:orientation="vertical">
+
 
     <TableRow
         android:layout_width="fill_parent"
@@ -20,6 +22,15 @@
         android:layout_height="291dp"
         android:layout_centerVertical="true"
         android:layout_marginTop="150dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
 
 
 

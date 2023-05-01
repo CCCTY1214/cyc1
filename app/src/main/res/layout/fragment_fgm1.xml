@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fgm1"
+    android:background="@color/none">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Disclaimer:
+
+Every effort will be made to provide safe, hygienic, healthy and delicious food and beverage service, but cannot guarantee that all dishes will be adapted to the tastes and eating habits of each guest.
+
+"
+        android:textSize="30dp"/>
+
+</FrameLayout>

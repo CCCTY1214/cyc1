@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cyc">
         <activity
-            android:name=".MainActivity5"
+            android:name=".menu"
             android:exported="false" />
         <activity
             android:name=".activity_add_and_decrease"
@@ -48,6 +48,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
